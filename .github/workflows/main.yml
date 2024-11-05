@@ -60,7 +60,7 @@ jobs:
           path: download-build-artifacts/ 
 
       - name: Display the download test result  
-        run: cat download-test-artifacts/test-results
+        run: cat download-test-artifacts/results.xml
 
       - name: Display the download build result  
         run: cat download-build-artifacts/output.txt
