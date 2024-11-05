@@ -4,10 +4,11 @@ jobs:
   job1:
     env:
       NAME: "SHAHD"
-      WO: ${{vars.WORK}}
     runs-on: ubuntu-latest
     steps:
       - name: Display my name
+        env:
+          WO: ${{vars.WORK}}
         run: |
           echo ${{env.NAME}}
-          echo ${{env.WO}}
+          echo ${WO}
