@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display my name
-        run: echo ${{env.NAME}}
+        run: |
+          echo ${{env.NAME}}
+          echo $WORK
