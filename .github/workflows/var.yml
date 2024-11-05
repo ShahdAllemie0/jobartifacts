@@ -6,6 +6,8 @@ jobs:
       NAME: "SHAHD"
     runs-on: ubuntu-latest
     steps:
+      - name: Debug - print
+        run: env
       - name: Display my name
         env:
           WO: ${{vars.WORK}}
