@@ -11,4 +11,4 @@ jobs:
           WO: ${{vars.WORK}}
         run: |
           echo ${{env.NAME}}
-          echo ${WO}
+          echo " A ${WO}"
