@@ -9,4 +9,4 @@ jobs:
       - name: Display my name
         run: |
           echo ${{env.NAME}}
-          echo $WORK
+          echo "$WORK"
