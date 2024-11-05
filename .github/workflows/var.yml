@@ -10,4 +10,4 @@ jobs:
       - name: Display my name
         run: |
           echo ${{env.NAME}}
-          echo "A $WO"
+          echo ${{env.WO}}
