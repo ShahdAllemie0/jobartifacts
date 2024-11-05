@@ -1,0 +1,10 @@
+on: 
+  push
+jobs:
+  job1:
+    env:
+      NAME: "SHAHD"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display my name
+        run: echo ${{env.NAME}}
