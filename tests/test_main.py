@@ -1,7 +1,7 @@
 import unittest
 from src.main import add
 
-class TestMain(unittest.TestMain):
+class TestMain(unittest.TestCase):
     def test_add(self):
         self.asserEqual(add(1,2),3)
 
