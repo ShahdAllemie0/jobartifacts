@@ -4,13 +4,13 @@ jobs:
   job1:
     env:
       NAME: "SHAHD"
+    environment: Test 
     runs-on: ubuntu-latest
     steps:
       - name: Debug - print
         run: env
       - name: Display my name
-        env:
-          WO: ${{vars.WORK}}
         run: |
           echo ${{env.NAME}}
-          echo " A ${WO}"
+          echo ${{vars.WORK}}
+          echo ${{secrets.PASSWORD}}
